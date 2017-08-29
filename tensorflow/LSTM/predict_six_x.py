@@ -64,7 +64,7 @@ test_X, test_y = generate_data(np.sin(np.linspace(
     test_start, test_end, TESTING_EXAMPLES, dtype=np.float32)))
 
 # 封装之前定义的lstm。
-regressor = SKCompat(learn.Estimator(model_fn=lstm_model,model_dir="Models/model_2"))
+regressor = SKCompat(learn.Estimator(model_fn=lstm_model,model_dir="../../target/lstm_model/"))
 # 训练
 regressor.fit(train_X, train_y, batch_size=BATCH_SIZE, steps=TRAINING_STEPS)
 
@@ -73,9 +73,9 @@ predicted = [[pred] for pred in regressor.predict(test_X)]
 
 # 计算MSE
 mse = np.sqrt(((predicted - test_y) ** 2).mean(axis=0))
-print ("Mean Square Error is: {}", mse[0])
+print ("Mean Square Error is: {}".format(mse[0]))
 
-print("time cost (ms):"+ str(time.clock()-timestamp))
+print("time cost : {} s".format(time.clock()-timestamp))
 
 plot_predicted, = plt.plot(predicted, label='$\hat y$')
 plot_test, = plt.plot(test_y, label='y=sin(x)')
@@ -83,5 +83,7 @@ plt.legend([plot_predicted, plot_test],['$\hat y$', 'y=sin(x)'])
 plt.show()
 
 """
-time cost (ms):11.271334689604961
+Mean Square Error is: 0.00637664133682847
+time cost : 11.2319511742214 s
+
 """

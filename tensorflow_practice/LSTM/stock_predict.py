@@ -70,15 +70,20 @@ biases = {
 
 # ——————————————————定义神经网络变量——————————————————
 def lstm(X):
-    batch_size = tf.shape(X)[0]
-    time_step = tf.shape(X)[1]
+    """
+
+
+    :param X:
+        X = tf.placeholder(tf.float32, shape=[None, time_step, INPUT_SIZE])
+    :return:
+    """
     w_in = weights['in']
     b_in = biases['in']
     input = tf.reshape(X, [-1, INPUT_SIZE])  # 需要将tensor转成2维进行计算，计算后的结果作为隐藏层的输入
     input_rnn = tf.matmul(input, w_in) + b_in
-    input_rnn = tf.reshape(input_rnn, [-1, time_step, RNN_UNIT])  # 将tensor转成3维，作为lstm cell的输入
+    input_rnn = tf.reshape(input_rnn, [-1, TIME_STEP, RNN_UNIT])  # 将tensor转成3维，作为lstm cell的输入
     cell = tf.nn.rnn_cell.BasicLSTMCell(RNN_UNIT)
-    init_state = cell.zero_state(batch_size, dtype=tf.float32)
+    init_state = cell.zero_state(BATCH_SIZE, dtype=tf.float32)
     output_rnn, final_states = tf.nn.dynamic_rnn(cell, input_rnn, initial_state=init_state,
                                                  dtype=tf.float32)  # output_rnn是记录lstm每个输出节点的结果，final_states是最后一个cell的结果
     output = tf.reshape(output_rnn, [-1, RNN_UNIT])  # 作为输出层的输入

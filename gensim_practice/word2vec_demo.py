@@ -27,6 +27,8 @@ model = Word2Vec(sentences, min_count=0)
 
 #gensim.models.word2vec.Text8Corpus
 
+model.wv.similar_by_word()
+
 print(model['computer'])
 """
 # 每次运行结果不一样

@@ -7,7 +7,8 @@ import tensorflow as tf
 
 # 定义常量
 TIME_STEP = 20
-RNN_UNIT = 10  # hidden layer units
+OUTPUT_TIME_STEP = 1
+NUM_UNITS = 10  # hidden layer units
 INPUT_SIZE = 14
 FEATURE_SIZE = INPUT_SIZE
 OUTPUT_SIZE = 1
@@ -28,7 +29,6 @@ def get_train_test_data():
 
     # 对各个特征作标准化
     normalized_data = (data - np.mean(data, axis=0)) / np.std(data, axis=0)
-    batch_index = []
     data_train = normalized_data[0:TRAIN_SIZE]
     data_test = normalized_data[TRAIN_SIZE:]
 
@@ -36,7 +36,7 @@ def get_train_test_data():
     train_x, train_y = [], []
     for i in range(len(data_train) - TIME_STEP):
         x = data_train[i:i + TIME_STEP, :-1]
-        y = data_train[i:i + TIME_STEP, FEATURE_SIZE, np.newaxis]
+        y = data_train[i + TIME_STEP - 1, FEATURE_SIZE]
         train_x.append(x)
         train_y.append(y)
 
@@ -44,65 +44,68 @@ def get_train_test_data():
     test_x, test_y = [], []
     for i in range(len(data_test) - TIME_STEP):
         x = data_test[i:i + TIME_STEP, :-1]
-        y = data_test[i:i + TIME_STEP, FEATURE_SIZE, np.newaxis]
+        y = data_test[i + TIME_STEP - 1, FEATURE_SIZE]
         test_x.append(x)
         test_y.append(y)
 
-    return train_x, train_y, test_x, test_y
+    train_X=np.array(train_x)
+    train_y = np.array(train_y)
+    test_X = np.array(test_x)
+    test_y = np.array(test_y)
+
+    train_X=np.reshape(train_X,[-1,TIME_STEP,INPUT_SIZE])
+    train_y =np.reshape(train_X,[-1,OUTPUT_SIZE])
+    test_X = np.reshape(train_X,[-1,TIME_STEP,INPUT_SIZE])
+    test_y = np.reshape(train_X,[-1,OUTPUT_SIZE])
+    return train_X, train_y, test_X, test_y
+
+
 
 
 # ——————————————————定义神经网络变量——————————————————
-# 输入层、输出层权重、偏置
+def lstm(in_tensor, out_tensor):
+    w_in = tf.get_variable('weight_input', shape=[INPUT_SIZE, NUM_UNITS], initializer=tf.truncated_normal_initializer())
+    # 注意 shape=[NUM_UNITS,] 与 shape=[NUM_UNITS,1] 的严重不同!
+    b_in = tf.get_variable('bias_input', shape=[NUM_UNITS, ], initializer=tf.zeros_initializer())
 
-weights = {
-    'in': tf.Variable(tf.random_normal([INPUT_SIZE, RNN_UNIT])),
-    'out': tf.Variable(tf.random_normal([RNN_UNIT, 1]))
-}
-biases = {
-    'in': tf.Variable(tf.constant(0.1, shape=[RNN_UNIT, ])),
-    'out': tf.Variable(tf.constant(0.1, shape=[1, ]))
-}
-
-
-# ——————————————————定义神经网络变量——————————————————
-def lstm(features,labels):
-    w_in = weights['in']
-    b_in = biases['in']
-    input = tf.reshape(features, [-1, INPUT_SIZE])  # 需要将tensor转成2维进行计算，计算后的结果作为隐藏层的输入
+    input = tf.reshape(in_tensor, [-1, INPUT_SIZE])  # 需要将tensor转成2维进行计算，计算后的结果作为隐藏层的输入
     input_rnn = tf.matmul(input, w_in) + b_in
-    input_rnn = tf.reshape(input_rnn, [-1, TIME_STEP, RNN_UNIT])  # 将tensor转成3维，作为lstm cell的输入
-    cell = tf.nn.rnn_cell.BasicLSTMCell(RNN_UNIT)
+    input_rnn = tf.reshape(input_rnn, [-1, TIME_STEP, NUM_UNITS])  # 将tensor转成3维，作为lstm cell的输入
+    cell = tf.nn.rnn_cell.BasicLSTMCell(NUM_UNITS)
     init_state = cell.zero_state(BATCH_SIZE, dtype=tf.float32)
     output_rnn, final_states = tf.nn.dynamic_rnn(cell, input_rnn, initial_state=init_state,
-                                                 dtype=tf.float32)  # output_rnn是记录lstm每个输出节点的结果，final_states是最后一个cell的结果
-    output = tf.reshape(output_rnn, [-1, RNN_UNIT])  # 作为输出层的输入
-    w_out = weights['out']
-    b_out = biases['out']
-    pred = tf.matmul(output, w_out) + b_out
-    return pred, final_states
+                                                 dtype=tf.float32)
+    output_rnn = output_rnn[:, -1, :]
+    # 创建一个全连接层，因为是回归问题, 输出的维度为1，None指的是不使用激活函数
+    predictions = tf.contrib.layers.fully_connected(output_rnn, 1, None)
+
+    # 将predictions和labels调整统一的shape
+    # labels = tf.reshape(labels, [-1])
+    predictions = tf.reshape(predictions, [-1, OUTPUT_TIME_STEP])
+    loss = tf.losses.mean_squared_error(predictions, out_tensor)
+    train_op = tf.train.AdamOptimizer(learning_rate).minimize(loss)
+    return predictions, loss,train_op
 
 
-train_x, train_y,test_x, test_y=get_train_test_data()
+train_X, train_y,test_X, test_y=get_train_test_data()
 
 # ——————————————————训练模型——————————————————
 def train_lstm():
     X = tf.placeholder(tf.float32, shape=[None, TIME_STEP, INPUT_SIZE])
-    Y = tf.placeholder(tf.float32, shape=[None, TIME_STEP, OUTPUT_SIZE])
-    pred, _ = lstm(features=X,labels=Y)
-    # 损失函数
-    loss =tf.losses.mean_squared_error(labels=Y,predictions=pred)
-    train_op = tf.train.AdamOptimizer(learning_rate).minimize(loss)
+    Y = tf.placeholder(tf.float32, shape=[None, OUTPUT_SIZE])
+    pred, loss,train_op = lstm(in_tensor=X, out_tensor=Y)
     saver = tf.train.Saver(tf.global_variables(), max_to_keep=15)
     # module_file = tf.train.latest_checkpoint()
     with tf.Session() as sess:
         sess.run(tf.global_variables_initializer())
+        steps = int(len(train_X) / BATCH_SIZE)
+        # iteration
+        for step in range(steps):
+            batch_X = train_X[step * BATCH_SIZE: (step + 1) * BATCH_SIZE]
+            batch_y = train_y[step * BATCH_SIZE: (step + 1) * BATCH_SIZE]
         # saver.restore(sess, module_file)
-        # 重复训练10000次
-        for i in range(200):
-            _, loss_ = sess.run([train_op, loss], feed_dict={X: train_x, Y: train_y})
-            print(i, loss_)
-            if i % 200 == 0:
-                print("保存模型：", saver.save(sess, './target/stock.model', global_step=i))
+            _, loss_ = sess.run([train_op, loss], feed_dict={X: batch_X, Y: batch_y})
+            print(step, loss_)
 
 
 

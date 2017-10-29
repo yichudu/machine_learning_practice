@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96a12408-12d7-420c-b243-2b72ee942b70" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow_practice/LSTM/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow_practice/LSTM/sin_x/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow_practice/LSTM/sin_x/eval.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow_practice/LSTM/sin_x/inference.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow_practice/LSTM/sin_x/train.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow_practice/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow_practice/persist_practice/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tensorflow_practice/persist_practice/save_and_restore.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tensorflow_practice/LSTM/predict_sin_x_v2_non_sk.py" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_practice/CNN/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_practice/CNN/mnist.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_practice/Multilayer_Perceptron.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_practice/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_practice/iris_classification.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gensim_practice/word2vec_demo.py" afterPath="$PROJECT_DIR$/gensim_practice/word2vec_demo.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_practice/LSTM/stock_predict_v2.py" afterPath="$PROJECT_DIR$/tensorflow_practice/LSTM/stock_predict_v2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jieba_word_segmentation/word_segmentation_demo.py" afterPath="$PROJECT_DIR$/jieba_word_segmentation/word_segmentation_demo.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_practice/persist_practice/save_and_restore.py" afterPath="$PROJECT_DIR$/tensorflow_practice/persist_practice/save_and_restore.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,9 +22,11 @@
     <SUITE FILE_PATH="coverage/machine_learning_practice$stock_predict_v2.coverage" NAME="stock_predict_v2 Coverage Results" MODIFIED="1506333559968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_practice/LSTM" />
     <SUITE FILE_PATH="coverage/machine_learning_practice$save_and_restore.coverage" NAME="save_and_restore Coverage Results" MODIFIED="1508058683867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_practice/persist_practice" />
     <SUITE FILE_PATH="coverage/machine_learning_practice$linear_regression_compute_sum.coverage" NAME="linear_regression_compute_sum Coverage Results" MODIFIED="1504832742604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sklearn_practice" />
+    <SUITE FILE_PATH="coverage/machine_learning_practice$word_segmentation_demo.coverage" NAME="word_segmentation_demo Coverage Results" MODIFIED="1509246926982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jieba_word_segmentation" />
     <SUITE FILE_PATH="coverage/machine_learning_practice$predict_sin_x.coverage" NAME="predict_sin_x Coverage Results" MODIFIED="1506152805601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_practice/LSTM" />
     <SUITE FILE_PATH="coverage/machine_learning_practice$predict_six_x.coverage" NAME="predict_six_x Coverage Results" MODIFIED="1503978318768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow/LSTM" />
     <SUITE FILE_PATH="coverage/machine_learning_practice$A.coverage" NAME="A Coverage Results" MODIFIED="1504833643625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gensim_practice" />
+    <SUITE FILE_PATH="coverage/machine_learning_practice$Multilayer_Perceptron.coverage" NAME="Multilayer_Perceptron Coverage Results" MODIFIED="1508398792494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/keras_practice" />
     <SUITE FILE_PATH="coverage/machine_learning_practice$test.coverage" NAME="test Coverage Results" MODIFIED="1506394925705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_practice/LSTM/sin_ x" />
     <SUITE FILE_PATH="coverage/machine_learning_practice$predict_sin_x_v2.coverage" NAME="predict_sin_x_v2 Coverage Results" MODIFIED="1505640933842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_practice/LSTM" />
     <SUITE FILE_PATH="coverage/machine_learning_practice$playground_implementation.coverage" NAME="playground_implementation Coverage Results" MODIFIED="1503997702894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow/BP" />
@@ -39,23 +37,43 @@
     <SUITE FILE_PATH="coverage/machine_learning_practice$mnist.coverage" NAME="mnist Coverage Results" MODIFIED="1503999311223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_practice/tensorboard_practice" />
     <SUITE FILE_PATH="coverage/machine_learning_practice$tfboard_playground_implementation__1_.coverage" NAME="tfboard_playground_implementation (1) Coverage Results" MODIFIED="1504057833593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_practice/tensorboard_practice" />
     <SUITE FILE_PATH="coverage/machine_learning_practice$demo.coverage" NAME="demo Coverage Results" MODIFIED="1504053482379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_practice/tensorboard_practice" />
-    <SUITE FILE_PATH="coverage/machine_learning_practice$iris_classification.coverage" NAME="iris_classification Coverage Results" MODIFIED="1504843022270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sklearn_practice" />
     <SUITE FILE_PATH="coverage/machine_learning_practice$keyword_extract.coverage" NAME="keyword_extract Coverage Results" MODIFIED="1505636703637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jieba_word_segmentation" />
     <SUITE FILE_PATH="coverage/machine_learning_practice$train.coverage" NAME="train Coverage Results" MODIFIED="1506420219309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_practice/LSTM/sin_x" />
+    <SUITE FILE_PATH="coverage/machine_learning_practice$iris_classification.coverage" NAME="iris_classification Coverage Results" MODIFIED="1508414119873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/keras_practice" />
     <SUITE FILE_PATH="coverage/machine_learning_practice$tfboard_playground_implementation.coverage" NAME="tfboard_playground_implementation Coverage Results" MODIFIED="1503997690902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow/tensorboard" />
     <SUITE FILE_PATH="coverage/machine_learning_practice$iris_predict.coverage" NAME="iris_predict Coverage Results" MODIFIED="1504852775685" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_practice/LSTM" />
     <SUITE FILE_PATH="coverage/machine_learning_practice$LeNet5_train.coverage" NAME="LeNet5_train Coverage Results" MODIFIED="1505133902637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_practice/CNN/LeNet5" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="train.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tensorflow_practice/LSTM/sin_x/train.py">
+      <file leaf-file-name="Multilayer_Perceptron.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/keras_practice/Multilayer_Perceptron.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="41" column="33" lean-forward="false" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+            <state relative-caret-position="225">
+              <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="35" />
               <folding>
-                <element signature="e#24#42#0" expanded="true" />
+                <element signature="e#78#90#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mnist_recognition.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tensorflow_practice/CNN/mnist_recognition.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mnist.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/keras_practice/CNN/mnist.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -63,94 +81,72 @@
       <file leaf-file-name="inference.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tensorflow_practice/LSTM/sin_x/inference.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="725">
-              <caret line="89" column="26" lean-forward="true" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="26" />
-              <folding>
-                <element signature="e#24#42#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="345">
+              <caret line="48" column="31" lean-forward="true" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tensorflow_practice/LSTM/sin_x/__init__.py">
+      <file leaf-file-name="skateboard_lyric.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jieba_word_segmentation/skateboard_lyric.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-495">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="eval.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tensorflow_practice/LSTM/sin_x/eval.py">
+      <file leaf-file-name="word_segmentation_demo.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jieba_word_segmentation/word_segmentation_demo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+            <state relative-caret-position="495">
+              <caret line="33" column="23" lean-forward="false" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
               <folding>
-                <element signature="e#24#42#0" expanded="true" />
+                <element signature="e#17#29#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="playground_implementation.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tensorflow_practice/BP/playground_implementation.py">
+      <file leaf-file-name="iris_classification.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sklearn_practice/iris_classification.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1590">
-              <caret line="109" column="51" lean-forward="true" selection-start-line="109" selection-start-column="51" selection-end-line="109" selection-end-column="51" />
+            <state relative-caret-position="360">
+              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tensorflow_practice/__init__.py">
+      <file leaf-file-name="iris_classification.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/keras_practice/iris_classification.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="simulate_network.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tensorflow_practice/BP/simulate_network.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="save_and_restore.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tensorflow_practice/persist_practice/save_and_restore.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="45" column="40" lean-forward="false" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
+            <state relative-caret-position="324">
+              <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
               <folding>
-                <element signature="e#35#58#0" expanded="true" />
+                <element signature="e#0#30#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ntpath.py" pinned="false" current-in-tab="true">
-        <entry file="file://C:/programing_program/anaconda/Lib/ntpath.py">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://C:/programing_program/anaconda/Lib/site-packages/keras/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="97" column="22" lean-forward="false" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
+            <state relative-caret-position="162">
+              <caret line="868" column="8" lean-forward="false" selection-start-line="868" selection-start-column="8" selection-end-line="868" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="keyedvectors.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/programing_program/anaconda/Lib/site-packages/gensim/models/keyedvectors.py">
+      <file leaf-file-name="training.py" pinned="false" current-in-tab="false">
+        <entry file="file://C:/programing_program/anaconda/Lib/site-packages/keras/engine/training.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="514" column="24" lean-forward="false" selection-start-line="514" selection-start-column="24" selection-end-line="514" selection-end-column="43" />
+            <state relative-caret-position="162">
+              <caret line="1656" column="0" lean-forward="false" selection-start-line="1656" selection-start-column="0" selection-end-line="1656" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -243,6 +239,10 @@
         <option value="$PROJECT_DIR$/tensorflow_practice/LSTM/sin_x/train.py" />
         <option value="$PROJECT_DIR$/tensorflow_practice/LSTM/sin_x/inference.py" />
         <option value="$PROJECT_DIR$/tensorflow_practice/persist_practice/save_and_restore.py" />
+        <option value="$PROJECT_DIR$/keras_practice/A.py" />
+        <option value="$PROJECT_DIR$/keras_practice/Multilayer_Perceptron.py" />
+        <option value="$PROJECT_DIR$/keras_practice/iris_classification.py" />
+        <option value="$PROJECT_DIR$/jieba_word_segmentation/word_segmentation_demo.py" />
       </list>
     </option>
   </component>
@@ -293,41 +293,29 @@
             <path>
               <item name="machine_learning_practice" type="b2602c69:ProjectViewProjectNode" />
               <item name="machine_learning_practice" type="462c0819:PsiDirectoryNode" />
+              <item name="keras_practice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="machine_learning_practice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="machine_learning_practice" type="462c0819:PsiDirectoryNode" />
+              <item name="keras_practice" type="462c0819:PsiDirectoryNode" />
+              <item name="CNN" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="machine_learning_practice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="machine_learning_practice" type="462c0819:PsiDirectoryNode" />
               <item name="sklearn_practice" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="machine_learning_practice" type="b2602c69:ProjectViewProjectNode" />
               <item name="machine_learning_practice" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="machine_learning_practice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="machine_learning_practice" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="lstm_model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="machine_learning_practice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="machine_learning_practice" type="462c0819:PsiDirectoryNode" />
               <item name="tensorflow_practice" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="machine_learning_practice" type="b2602c69:ProjectViewProjectNode" />
               <item name="machine_learning_practice" type="462c0819:PsiDirectoryNode" />
               <item name="tensorflow_practice" type="462c0819:PsiDirectoryNode" />
-              <item name="BP" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="machine_learning_practice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="machine_learning_practice" type="462c0819:PsiDirectoryNode" />
-              <item name="tensorflow_practice" type="462c0819:PsiDirectoryNode" />
-              <item name="LSTM" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="machine_learning_practice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="machine_learning_practice" type="462c0819:PsiDirectoryNode" />
-              <item name="tensorflow_practice" type="462c0819:PsiDirectoryNode" />
-              <item name="persist_practice" type="462c0819:PsiDirectoryNode" />
+              <item name="CNN" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -343,18 +331,19 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\code_github\machine_learning_practice\tensorflow_practice\persist_practice" />
-      <recent name="D:\code_github\machine_learning_practice\tensorflow_practice\LSTM" />
-      <recent name="D:\code_github\machine_learning_practice\tensorflow_practice\CNN\TextCNN" />
-      <recent name="D:\code_github\machine_learning_practice\tensorflow_practice\CNN" />
-      <recent name="D:\code_github\machine_learning_practice\tensorflow\tensorboard" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\code_github\machine_learning_practice\keras_practice\CNN" />
       <recent name="D:\code_github\machine_learning_practice\tensorflow_practice\LSTM\sin_x_seq" />
       <recent name="D:\code_github\machine_learning_practice\tensorflow_practice\LSTM\sin_ x" />
       <recent name="D:\code_github\machine_learning_practice\tensorflow_practice\BP" />
       <recent name="D:\code_github\machine_learning_practice\tensorflow_practice\CNN\LeNet5" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\code_github\machine_learning_practice\keras_practice" />
+      <recent name="D:\code_github\machine_learning_practice\tensorflow_practice\persist_practice" />
+      <recent name="D:\code_github\machine_learning_practice\tensorflow_practice\LSTM" />
+      <recent name="D:\code_github\machine_learning_practice\tensorflow_practice\CNN\TextCNN" />
+      <recent name="D:\code_github\machine_learning_practice\tensorflow_practice\CNN" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -369,21 +358,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.save_and_restore">
-    <configuration name="predict_sin_x_v2_non_sk" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.word_segmentation_demo">
+    <configuration name="Multilayer_Perceptron" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tensorflow_practice/LSTM" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/keras_practice" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="machine_learning_practice" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\code_github\machine_learning_practice\tensorflow_practice\LSTM\sin_x_seq\predict_sin_x_v2_non_sk.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/keras_practice/Multilayer_Perceptron.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="iris_classification" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/keras_practice" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="machine_learning_practice" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/keras_practice/iris_classification.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -406,42 +413,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="stock_predict_v2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tensorflow_practice/LSTM" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="machine_learning_practice" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tensorflow_practice/LSTM/stock_predict_v2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tensorflow_practice/LSTM/sin_ x" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="machine_learning_practice" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\code_github\machine_learning_practice\tensorflow_practice\LSTM\sin_x_seq\test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -460,20 +431,38 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="word_segmentation_demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/jieba_word_segmentation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="machine_learning_practice" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/jieba_word_segmentation/word_segmentation_demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.predict_sin_x_v2_non_sk" />
-      <item index="1" class="java.lang.String" itemvalue="Python.stock_predict_v2" />
-      <item index="2" class="java.lang.String" itemvalue="Python.test" />
-      <item index="3" class="java.lang.String" itemvalue="Python.train" />
-      <item index="4" class="java.lang.String" itemvalue="Python.save_and_restore" />
+      <item index="0" class="java.lang.String" itemvalue="Python.train" />
+      <item index="1" class="java.lang.String" itemvalue="Python.save_and_restore" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Multilayer_Perceptron" />
+      <item index="3" class="java.lang.String" itemvalue="Python.iris_classification" />
+      <item index="4" class="java.lang.String" itemvalue="Python.word_segmentation_demo" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.save_and_restore" />
-        <item index="1" class="java.lang.String" itemvalue="Python.train" />
-        <item index="2" class="java.lang.String" itemvalue="Python.test" />
-        <item index="3" class="java.lang.String" itemvalue="Python.stock_predict_v2" />
-        <item index="4" class="java.lang.String" itemvalue="Python.predict_sin_x_v2_non_sk" />
+        <item index="0" class="java.lang.String" itemvalue="Python.word_segmentation_demo" />
+        <item index="1" class="java.lang.String" itemvalue="Python.iris_classification" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Multilayer_Perceptron" />
+        <item index="3" class="java.lang.String" itemvalue="Python.save_and_restore" />
+        <item index="4" class="java.lang.String" itemvalue="Python.train" />
       </list>
     </recent_temporary>
   </component>
@@ -512,7 +501,14 @@
       <option name="project" value="LOCAL" />
       <updated>1506160490615</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="hi">
+      <created>1508061270743</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1508061270743</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -527,12 +523,12 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26226014" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26439232" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997773" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21046771" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41091314" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2553305" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -611,163 +607,21 @@
           <line>106</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/keras_practice/iris_classification.py</url>
+          <line>32</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="29" />
+      <option name="time" value="32" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression=" enumerate(batches)" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/programing_program/anaconda/Lib/site-packages/jieba/analyse/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jieba_word_segmentation/jieba_demo.py" />
-    <entry file="file://$PROJECT_DIR$/tensorflow_practice/CNN/TextCNN/text_cnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="39" column="21" lean-forward="false" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jieba_word_segmentation/word_segmentation_demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="25" column="3" lean-forward="false" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jieba_word_segmentation/skateboard_lyric.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="76" column="3" lean-forward="false" selection-start-line="76" selection-start-column="3" selection-end-line="76" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jieba_word_segmentation/keyword_extract.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/programing_program/anaconda/Lib/site-packages/numpy/core/fromnumeric.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="194" column="40" lean-forward="true" selection-start-line="194" selection-start-column="8" selection-end-line="194" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/-1239247568/numpy/core/multiarray.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1114">
-          <caret line="114" column="4" lean-forward="false" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/programing_program/anaconda/Lib/site-packages/tensorflow/contrib/learn/python/learn/estimators/estimator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="428" column="52" lean-forward="false" selection-start-line="428" selection-start-column="47" selection-end-line="428" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/programing_program/anaconda/Lib/site-packages/numpy/core/numeric.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/programing_program/anaconda/Lib/site-packages/pandas/io/parsers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="316" column="0" lean-forward="false" selection-start-line="316" selection-start-column="0" selection-end-line="316" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/programing_program/anaconda/Lib/site-packages/tensorflow/python/training/optimizer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="314" column="0" lean-forward="false" selection-start-line="314" selection-start-column="0" selection-end-line="314" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/programing_program/anaconda/Lib/site-packages/tensorflow/python/ops/losses/losses_impl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="496" column="4" lean-forward="false" selection-start-line="496" selection-start-column="4" selection-end-line="496" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/programing_program/anaconda/Lib/site-packages/tensorflow/python/ops/nn_ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-79">
-          <caret line="1746" column="4" lean-forward="false" selection-start-line="1746" selection-start-column="4" selection-end-line="1746" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow_practice/CNN/LeNet5/LeNet5_infernece.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="42" column="26" lean-forward="false" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow_practice/CNN/LeNet5/LeNet5_train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="62" column="71" lean-forward="false" selection-start-line="62" selection-start-column="60" selection-end-line="62" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow_practice/LSTM/predict_sin_x_v2.py" />
-    <entry file="file://C:/programing_program/anaconda/Lib/site-packages/tensorflow/contrib/layers/python/layers/layers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="1579" column="31" lean-forward="false" selection-start-line="1579" selection-start-column="20" selection-end-line="1579" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/programing_program/anaconda/Lib/site-packages/tensorflow/python/framework/tensor_shape.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="736" column="0" lean-forward="false" selection-start-line="736" selection-start-column="0" selection-end-line="736" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="1022" column="0" lean-forward="false" selection-start-line="1022" selection-start-column="0" selection-end-line="1022" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/programing_program/anaconda/Lib/site-packages/tensorflow/python/framework/common_shapes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="658" column="0" lean-forward="false" selection-start-line="658" selection-start-column="0" selection-end-line="658" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/programing_program/anaconda/Lib/site-packages/tensorflow/python/ops/rnn_cell.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-369">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/programing_program/anaconda/Lib/site-packages/tensorflow/python/ops/rnn.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
@@ -825,14 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow_practice/LSTM/stock_predict_v2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="107" column="30" lean-forward="true" selection-start-line="107" selection-start-column="30" selection-end-line="107" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tensorflow_practice/LSTM/predict_sin_x.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -862,7 +708,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19635">
           <caret line="1323" column="22" lean-forward="false" selection-start-line="1323" selection-start-column="20" selection-end-line="1323" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -871,7 +716,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -881,7 +726,7 @@
         <state relative-caret-position="405">
           <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
           <folding>
-            <element signature="e#0#34#0" expanded="true" />
+            <element signature="e#0#34#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -890,7 +735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
           <caret line="514" column="24" lean-forward="false" selection-start-line="514" selection-start-column="24" selection-end-line="514" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -920,10 +764,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tensorflow_practice/LSTM/sin_x/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
+        <state relative-caret-position="480">
           <caret line="41" column="33" lean-forward="false" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
           <folding>
-            <element signature="e#24#42#0" expanded="true" />
+            <element signature="e#24#42#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -936,22 +780,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow_practice/LSTM/sin_x/inference.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="89" column="26" lean-forward="true" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="26" />
-          <folding>
-            <element signature="e#24#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tensorflow_practice/LSTM/sin_x/eval.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        <state relative-caret-position="120">
+          <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
           <folding>
-            <element signature="e#24#42#0" expanded="true" />
+            <element signature="e#24#42#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -975,26 +809,228 @@
     <entry file="file://$PROJECT_DIR$/tensorflow_practice/BP/playground_implementation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1590">
-          <caret line="109" column="51" lean-forward="true" selection-start-line="109" selection-start-column="51" selection-end-line="109" selection-end-column="51" />
+          <caret line="109" column="51" lean-forward="false" selection-start-line="109" selection-start-column="51" selection-end-line="109" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/programing_program/anaconda/Lib/ntpath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1395">
+          <caret line="97" column="22" lean-forward="false" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tensorflow_practice/persist_practice/save_and_restore.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="45" column="40" lean-forward="false" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
+        <state relative-caret-position="0">
+          <caret line="64" column="25" lean-forward="false" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
           <folding>
-            <element signature="e#35#58#0" expanded="true" />
+            <element signature="e#35#58#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/programing_program/anaconda/Lib/ntpath.py">
+    <entry file="file://$PROJECT_DIR$/tensorflow_practice/LSTM/stock_predict_v2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="97" column="22" lean-forward="false" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
+        <state relative-caret-position="566">
+          <caret line="82" column="28" lean-forward="false" selection-start-line="82" selection-start-column="28" selection-end-line="82" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/-1239247568/numpy/random/mtrand.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="2202" column="4" lean-forward="false" selection-start-line="2202" selection-start-column="4" selection-end-line="2202" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/programing_program/anaconda/Lib/site-packages/numpy/random/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="101" column="34" lean-forward="true" selection-start-line="101" selection-start-column="34" selection-end-line="101" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/3/six/__init__.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-420">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/programing_program/anaconda/Lib/site-packages/keras/activations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="92" column="39" lean-forward="true" selection-start-line="92" selection-start-column="39" selection-end-line="92" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/programing_program/anaconda/Lib/site-packages/tensorflow/python/ops/nn_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="1516" column="4" lean-forward="false" selection-start-line="1516" selection-start-column="4" selection-end-line="1516" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/programing_program/anaconda/Lib/site-packages/sklearn/model_selection/_split.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-799">
+          <caret line="1903" column="4" lean-forward="false" selection-start-line="1903" selection-start-column="4" selection-end-line="1903" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/programing_program/anaconda/Lib/site-packages/sklearn/datasets/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="330" column="37" lean-forward="true" selection-start-line="330" selection-start-column="37" selection-end-line="330" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/programing_program/anaconda/Lib/site-packages/keras/layers/core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="94" column="40" lean-forward="false" selection-start-line="94" selection-start-column="36" selection-end-line="94" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/programing_program/anaconda/Lib/site-packages/keras/utils/np_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow_practice/CNN/TextCNN/text_cnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="77" column="55" lean-forward="false" selection-start-line="77" selection-start-column="55" selection-end-line="77" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#23#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow_practice/CNN/TextCNN/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/programing_program/anaconda/Lib/site-packages/sklearn/metrics/classification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="114" column="25" lean-forward="false" selection-start-line="114" selection-start-column="19" selection-end-line="114" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/programing_program/anaconda/Lib/site-packages/numpy/core/fromnumeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="909" column="4" lean-forward="false" selection-start-line="909" selection-start-column="4" selection-end-line="909" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/programing_program/anaconda/Lib/site-packages/keras/engine/training.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="1656" column="0" lean-forward="false" selection-start-line="1656" selection-start-column="0" selection-end-line="1656" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/programing_program/anaconda/Lib/site-packages/keras/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="868" column="8" lean-forward="false" selection-start-line="868" selection-start-column="8" selection-end-line="868" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sklearn_practice/iris_classification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow_practice/LSTM/sin_x/inference.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="48" column="31" lean-forward="true" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jieba_word_segmentation/skateboard_lyric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-495">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jieba_word_segmentation/word_segmentation_demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="23" lean-forward="false" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+          <folding>
+            <element signature="e#17#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keras_practice/Multilayer_Perceptron.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="35" />
+          <folding>
+            <element signature="e#78#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow_practice/CNN/mnist_recognition.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keras_practice/CNN/mnist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keras_practice/iris_classification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

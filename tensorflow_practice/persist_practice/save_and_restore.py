@@ -62,6 +62,7 @@ def restore():
 
 
 run_and_save()
+#tf.reset_default_graph()
 restore()
 """
 [ 1.  1.  1.]

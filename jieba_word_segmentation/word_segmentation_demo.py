@@ -24,3 +24,12 @@ for sentence in lyric_arr:
 在 p/ 这 r/ 光滑 a/ 的 uj/ 地上 s/ 摩擦 vn/ 
 摩擦 vn/ 
 """
+
+for sentence in lyric_arr:
+    print(jieba.lcut(sentence))
+"""
+['有些', '事', '我', '都', '已', '忘记']
+['但', '我', '现在', '还', '记得']
+['在', '一个', '晚上', '我', '的', '母亲', '问', '我']
+['今天', '怎么', '不', '开心']
+"""

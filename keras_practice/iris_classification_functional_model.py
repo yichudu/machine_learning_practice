@@ -7,7 +7,7 @@ from sklearn import datasets,neighbors,linear_model,metrics
 from sklearn.model_selection import train_test_split
 from keras.layers.advanced_activations import PReLU
 import numpy as np
-from keras.utils import plot_model
+#from keras.utils import plot_model
 
 import keras
 from keras.models import Sequential,Model
@@ -23,9 +23,9 @@ X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, test
 y_train = keras.utils.to_categorical(y_train, num_classes=3)
 y_test = keras.utils.to_categorical(y_test, num_classes=3)
 
-inputs=Input(shape=(FEATURE_DIM,))
+inputs=Input(shape=(FEATURE_DIM,),dtype='float32',name='iris_data_input')
 dense1=Dense(10, activation='relu', input_dim=4)(inputs)
-dense2=Dense(5)(dense1)
+dense2=Dense(5,activation='relu')(dense1)
 outpus=Dense(3, activation='softmax')(dense2)
 
 model=Model(inputs=inputs,outputs=outpus)
@@ -33,10 +33,10 @@ sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy',
               optimizer=sgd,
               metrics=['accuracy'])
-plot_model(model, to_file='model.png',show_shapes='True')
-
-model.fit(X_train, y_train,
-          epochs=50)
+#plot_model(model, to_file='model.png',show_shapes='True')
+early_stop_callback=keras.callbacks.EarlyStopping(monitor='val_loss', patience=2, verbose=1, mode='auto')
+model.fit(X_train, y_train,validation_data=(X_test,y_test),
+          epochs=50,callbacks=[early_stop_callback])
 evaluate_score = model.evaluate(X_test, y_test)
 print('\n', model.metrics_names,'\n', evaluate_score)
 """

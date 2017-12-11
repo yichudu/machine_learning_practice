@@ -1,8 +1,8 @@
 from keras.preprocessing import sequence, text
 import jieba_word_segmentation.skateboard_lyric as skateboard_lyric
 import jieba.posseg as pseg
-
-
+import keras
+MAX_LEN=10
 lyric_arr=skateboard_lyric.lyric.split('\n')
 texts=[]
 for sentence in lyric_arr:
@@ -11,14 +11,14 @@ for sentence in lyric_arr:
         tmp_arr.append(word)
     texts.append(' '.join(tmp_arr))
 
-tk = text.Tokenizer(nb_words=int(1E4))
+tk = text.Tokenizer(num_words=int(1E4))
 tk.fit_on_texts(texts)
 
 texts_sequences = tk.texts_to_sequences(texts)
-pad_sequences=sequence.pad_sequences(texts_sequences,maxlen=10)
-
-print (tk.word_index)
-print(pad_sequences[:10])
+text_pad_sequences=keras.preprocessing.sequence.pad_sequences(texts_sequences,maxlen=MAX_LEN)
+if __name__=='__main__':
+    print (tk.word_index)
+    print(text_pad_sequences[:10])
 """
 {'当': 126, '晚上': 80, '之': 117, '不怕': 27, '庞麦郎': 41, '魅力': 116, '离开': 125, '过': 118, '将来': 98, '就是': 48, '远': 51, '去': 109, '没有': 44, '下': 23, '有时': 24, '想象': 87, '摩': 49, '要': 14, '时间': 46, '第二个': 110, '都': 10, '一步': 6, '必须': 124, '整个': 93, '曲': 68, '依然': 105, '与众不同': 89, '给': 100, '翰': 39, '跳舞': 90, '约瑟': 38, '事': 72, '问': 82, '棒': 92, '街道': 64, '郑楠': 70, '驱使': 56, '月光': 22, '喜欢': 62, '那': 47, '已': 73, '情不自禁': 133, '回家': 131, '梦': 32, '完成': 61, '在': 5, '一双': 88, '·': 40, '有些': 71, '魔鬼': 18, '是': 12, '还': 77, '身影': 50, '肯定': 91, '美好': 59, '看到': 37, '的': 1, '地上': 8, '走时': 128, '怎么': 84, '我': 2, '城市': 43, '会': 45, '后': 108, '很快': 119, '时刻': 60, '似': 17, '忘记': 74, '滑板鞋': 9, '发现': 106, '美丽': 28, '专卖店': 130, '它': 114, '力量': 55, '找遍': 94, '不': 85, '自己': 11, '今天': 83, '真的': 30, '2016': 66, '脚步': 57, '记得': 78, '她': 97, '天黑': 26, '正要': 127, '星期天': 102, '：': 35, '找到': 99, '很': 25, '答案': 101, '母亲': 81, '再次': 103, '时尚': 21, '宇': 34, '想': 123, '摩擦': 4, '一个': 79, '说': 42, '为': 115, '一个月': 107, '词': 67, '所有': 95, '一种': 54, '生命': 58, '就要': 121, '两步': 16, '开心': 86, '华晨': 33, '但': 75, '告诉': 29, '这': 3, '不是': 31, '降临': 122, '这里': 111, '近': 52, '舞蹈': 63, '人们': 112, '光滑': 7, '上': 65, '最': 20, '街': 96, '现在': 76, '中': 36, '路上': 132, '编曲': 69, '夜幕': 120, '了': 15, '感到': 53, '有': 13, '称': 113, '一家': 129, '寻找': 104, '步伐': 19}
 [[ 0  0  0  0  2  1  9 66 33 34]

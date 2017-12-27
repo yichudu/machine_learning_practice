@@ -12,7 +12,7 @@ reader = tf.TextLineReader(skip_header_lines=1)
 key, value = reader.read(filename_queue)
 
 record_defaults = [['name'], [1], [1.]]
-csv_value = tf.decode_csv(value, record_defaults=record_defaults)
+csv_value = tf.decode_csv(value, record_defaults=record_defaults,use_quote_delim=False)
 # 不能写tf.train.batch([csv_value]), 类型不一样的要分开写
 batch_csv_value_op = tf.train.batch([csv_value[0],csv_value[1],csv_value[2]], batch_size=3, num_threads=2, capacity=5 * 2,allow_smaller_final_batch=True )
 

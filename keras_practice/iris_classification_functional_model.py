@@ -36,7 +36,7 @@ model.compile(loss='categorical_crossentropy',
 #plot_model(model, to_file='model.png',show_shapes='True')
 early_stop_callback=keras.callbacks.EarlyStopping(monitor='val_loss', patience=2, verbose=1, mode='auto')
 model.fit(X_train, y_train,validation_data=(X_test,y_test),
-          epochs=50,callbacks=[early_stop_callback])
+          epochs=50,callbacks=[early_stop_callback],verbose=2)
 evaluate_score = model.evaluate(X_test, y_test)
 print('\n', model.metrics_names,'\n', evaluate_score)
 """

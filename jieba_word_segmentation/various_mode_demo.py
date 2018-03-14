@@ -31,4 +31,17 @@ print('\n')
 
 
 for (word, flag) in pseg.cut('我的心是个落叶的季节'):
-    print(word,flag,end='/ ')
+    # print(word,flag,sep ='/',end='/')
+    print(word,flag,end='/')
+
+print()
+for (word, flag) in pseg.cut('默默无闻的爱'):
+    # print(word,flag,sep ='/',end='/')
+    print(word, flag, end='/')
+
+print()
+for (word, flag) in pseg.cut('就像老鼠爱大米'):
+    # print(word,flag,sep ='/',end='/')
+    print(word, flag, end='/')
+
+

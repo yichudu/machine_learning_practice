@@ -30,7 +30,7 @@ def run_and_save():
         sess.run(init_op)
         # Do some work with the model.
 
-        print(sess.run(inc_v1_op))
+        print(sess.run(inc_v1_op)) # type(sess.run(inc_v1_op)) is  numpy.ndarray
         print(sess.run(dec_v2_op))
 
         # delete old files

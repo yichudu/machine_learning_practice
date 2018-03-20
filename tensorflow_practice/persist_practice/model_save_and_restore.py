@@ -19,7 +19,7 @@ if __name__ =='__main__':
 
     builder = tf.saved_model.builder.SavedModelBuilder(export_dir)
 
-    with tf.Session(graph=tf.Graph()) as sess:
+    with tf.Session() as sess:
         init_op = tf.global_variables_initializer()
         sess.run(init_op)
 
@@ -30,6 +30,6 @@ if __name__ =='__main__':
             loss_evl, _ = sess.run([loss, train], feed_dict={x: X_train, y: y_train})
             if i%100 ==0:
                 print(loss_evl)
-        builder.add_meta_graph_and_variables(sess)
+        builder.add_meta_graph_and_variables(sess,tags=tf.saved_model.tag_constants.SERVING)
 
     builder.save()

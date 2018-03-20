@@ -63,6 +63,7 @@ def train():
     # Build 2 hidden layer DNN with 10, 10 units respectively.
     classifier = tf.estimator.Estimator(
         model_fn=my_model,
+        model_dir='d:/tf_models/iris',
         params={
             'feature_columns': feature_columns,
             # Two hidden layers of 10 nodes each.

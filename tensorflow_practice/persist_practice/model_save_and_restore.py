@@ -8,6 +8,10 @@ from os.path import isdir, isfile, join
 import numpy as np
 from tensorflow_practice.BP.iris_predict_api import *
 
+
+
+
+
 if __name__ =='__main__':
     export_dir = 'd:/tmp/model_save_restore/'
 
@@ -18,6 +22,7 @@ if __name__ =='__main__':
         print('delete OK!')
 
     builder = tf.saved_model.builder.SavedModelBuilder(export_dir)
+    train_op, loss_op = model_fn(features_placeholder, labels_placeholder, mode=tf.saved_model.tag_constants.TRAINING)
 
     with tf.Session() as sess:
         init_op = tf.global_variables_initializer()
@@ -27,7 +32,7 @@ if __name__ =='__main__':
         STEPS = 1000
         loss_arr = []
         for i in range(STEPS):
-            loss_evl, _ = sess.run([loss, train], feed_dict={x: X_train, y: y_train})
+            _,loss_evl = sess.run([train_op, loss_op], feed_dict={features_placeholder: features, labels_placeholder: labels})
             if i%100 ==0:
                 print(loss_evl)
         builder.add_meta_graph_and_variables(sess,tags=tf.saved_model.tag_constants.SERVING)

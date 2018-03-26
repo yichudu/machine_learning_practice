@@ -32,7 +32,7 @@ def model_fn(features,  # This is batch_features from input_fn
     """
 
     :param hidden_units: tuple
-    :return:
+    :return: train_op, loss_tensor,predict_tensor
     """
     net=features
     hidden_units=[10,10]
@@ -46,7 +46,7 @@ def model_fn(features,  # This is batch_features from input_fn
     predicted_classes = tf.argmax(logits, 1)
 
     # Compute loss.
-    loss_op = tf.losses.sparse_softmax_cross_entropy(labels=labels, logits=logits)
+    loss_tensor = tf.losses.sparse_softmax_cross_entropy(labels=labels, logits=logits)
 
     # Compute evaluation metrics.
     accuracy = tf.metrics.accuracy(labels=labels,
@@ -55,24 +55,32 @@ def model_fn(features,  # This is batch_features from input_fn
     metrics = {'accuracy': accuracy}
     tf.summary.scalar('accuracy', accuracy[1])
 
-    if mode == tf.saved_model.tag_constants.TRAINING:
-        optimizer = tf.train.AdagradOptimizer(learning_rate=0.1)
-        train_op = optimizer.minimize(loss_op, global_step=tf.train.get_global_step())
-        return train_op, loss_op
+    predict_tensor = tf.argmax(logits, 1,name='predict_tensor')
+    optimizer = tf.train.AdagradOptimizer(learning_rate=0.1)
+    train_op = optimizer.minimize(loss_tensor, global_step=tf.train.get_global_step())
+
+    if mode == tf.estimator.ModeKeys.PREDICT:
+        # Compute predictions.
+        return predict_tensor
+
+    if mode == tf.estimator.ModeKeys.TRAIN:
+        return train_op, loss_tensor
+    if mode is None:
+        return train_op, loss_tensor,predict_tensor
 
 
 features_placeholder, labels_placeholder=get_placeholder()
 features,labels=train_input_fn()
 
 def train():
-    train_op, loss_op=model_fn(features_placeholder, labels_placeholder,mode=tf.saved_model.tag_constants.TRAINING)
+    train_op, loss_tensor=model_fn(features_placeholder, labels_placeholder,mode=tf.estimator.ModeKeys.TRAIN)
     with tf.Session() as sess:
         init_op = tf.global_variables_initializer()
         sess.run(init_op)
         # 训练模型
         STEPS = 1000
         for i in range(STEPS):
-            _,loss_evl = sess.run([train_op, loss_op], feed_dict={features_placeholder: features, labels_placeholder: labels})
+            _,loss_evl = sess.run([train_op, loss_tensor], feed_dict={features_placeholder: features, labels_placeholder: labels})
             if i % 100 == 0:
                 print(loss_evl)
 
